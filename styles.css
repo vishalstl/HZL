@@ -66,17 +66,24 @@ body {
     position: absolute;
     z-index: 2;
     left: 10%;
-    top: 5%;
+    top: 2%;
     right: 10%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
 
-.banner .header .hamburger {
-    height: 80px;
-    width: 80px;
+.banner .header .logo{
+    width: 450px;
+    height: 100px;
     object-fit: contain;
+}
+
+.banner .header .hamburger {
+    height: 60px;
+    width: 60px;
+    object-fit: contain;
+    margin-top: 1%;
 }
 
 .banner .text .gradient {
@@ -84,8 +91,8 @@ body {
     box-shadow: 0px 3px 6px #00000029;
     opacity: 1;
     z-index: 2;
-    width: 212px;
-    height: 10px;
+    width: 150px;
+    height: 6px;
 }
 
 .banner .text {
@@ -93,12 +100,12 @@ body {
     left: 10%;
     top: 45%;
     color: white;
-    font-size: 70px;
+    font-size: 40px;
     font-weight: 600;
     letter-spacing: 0;
-    line-height: 120%;
+    line-height: 130%;
     z-index: 2;
-    max-width: 45%;
+    max-width: 28%;
 }
 
 .banner .text p {
@@ -111,6 +118,7 @@ body {
     width: 100%;
     height: 950px;
     overflow: hidden;
+    background-color: rgba(5, 82, 149, 0.92);
 }
 
 /* Slides Container */
@@ -131,16 +139,16 @@ body {
 }
 
 .banner .slides-container-banner .slide-banner img {
-    animation: scale 15s ease infinite;
+    animation: scale 15s ease-in-out infinite;
+    object-fit: cover;
 }
 
 @keyframes scale {
-    50% {
-        -webkit-transform: scale(1.2);
-        -moz-transform: scale(1.2);
-        -ms-transform: scale(1.2);
-        -o-transform: scale(1.2);
-        transform: scale(1.2);
+    50%{
+        width: 90%;
+    }
+    100%{
+        width: 80%;
     }
 }
 
@@ -181,8 +189,9 @@ body {
 }
 
 .road-map img {
-    height: 11000px;
-    width: 130%;
+    height: 9000px;
+    width: 140%;
+    margin-left: 10%;
     object-fit: fill;
 }
 
@@ -192,8 +201,8 @@ body {
 
 .container1 {
     display: flex;
-    margin-top: 12%;
-    margin-left: 12%;
+    margin-top: 10%;
+    margin-left: 15%;
     margin-right: 12%;
 }
 
@@ -202,7 +211,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 250px;
+    height: 200px;
 }
 
 .container1 .column p {
@@ -210,7 +219,7 @@ body {
     width: 65%;
 
     text-align: center;
-    font-size: 28px;
+    font-size: 20px;
     font-weight: 500;
 }
 
@@ -230,10 +239,9 @@ body {
 
 
 .for-margin {
-    margin-top: -8%;
+    margin-top: -5%;
     position: absolute;
     width: 60%;
-    height: 10px;
 }
 
 .for-margin .column {
@@ -246,13 +254,13 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin-left: 12%;
-    margin-top: 2%;
+    margin-left: 15%;
+    margin-top: 5%;
 }
 
 .setting-benchmarks .text {
     width: 50%;
-    font-size: 65px;
+    font-size: 45px;
     font-weight: 600;
 }
 
@@ -261,16 +269,16 @@ body {
 }
 
 .setting-benchmarks .icon img {
-    height: 450px;
-    width: 450px;
-    object-fit: contain;
+    height: 250px;
+    width: 250px;
+    object-fit: cover;
 }
 
 .slider-container {
-    margin-left: 10%;
-    margin-top: -10%;
+    margin-left: 12%;
+    margin-top: -5%;
     width: 1500px;
-    height: 800px;
+    height: 600px;
     position: relative;
     overflow: hidden;
 }
@@ -324,7 +332,7 @@ body {
 
 .slider-card p {
     margin-left: 4%;
-    font-size: 25px;
+    font-size: 20px;
 }
 
 .slider-navigation {
@@ -365,7 +373,7 @@ body {
 
 .img {
     width: 250px;
-    height: 700px;
+    height: 550px;
     /* box-shadow: 0 0 .5rem rgba(0, 0, 0, .5); */
     cursor: pointer;
     border-radius: 0rem;
@@ -437,7 +445,7 @@ body {
     color: #fff;
     position: absolute;
     z-index: 10;
-    font-size: 30px;
+    font-size: 20px;
     bottom: 15%;
     right: 50%;
     left: 50%;
@@ -476,7 +484,7 @@ body {
 /*---------- 3rd 3 cols -------- */
 
 .for-margin2 {
-    margin-top: 15%;
+    margin-top: 13%;
 }
 
 .for-margin2 .column-1 {
@@ -498,19 +506,19 @@ body {
 
 /*-------------- Zinc-Lead-Silver slider------------- */
 .slider-container2 {
-    margin-top: 13%;
+    margin-top: 10%;
     margin-right: 0%;
     width: 100%;
-    height: 1050px;
+    height: 900px;
     position: relative;
     overflow: hidden;
 }
 
 .slider2 {
     width: 300%;
-    margin-top: 100px;
+    margin-top: 60px;
     margin-right: 0%;
-    height: 1050px;
+    height: 850px;
     display: flex;
     transition: transform 0.5s ease-in-out;
 }
@@ -532,7 +540,7 @@ body {
     top: 750px;
     left: 0;
     width: 40%;
-    height: 400px;
+    height: 300px;
     background-color: rgba(255, 255, 255, 1);
     border-top-right-radius: 5%;
     padding-top: 2%;
@@ -543,12 +551,12 @@ body {
 }
 
 .slider-card2 h3 {
-    font-size: 70px;
+    font-size: 30px;
     margin: 0;
 }
 
 .slider-card2 p {
-    font-size: 25px;
+    font-size: 18px;
     margin-top: 35px;
 }
 
@@ -558,19 +566,19 @@ body {
 
 .slider-navigation2 {
     position: absolute;
-    top: 10px;
+    top: 1px;
     left: 50%;
     transform: translateX(-50%);
 }
 
 .slider-navigation2 span {
-    font-size: 45px;
+    font-size: 30px;
     font-weight: 700;
 }
 
 .slider-button2 {
     padding: 5px 10px;
-    font-size: 40px;
+    font-size: 30px;
     font-weight: 700;
     cursor: pointer;
     background-color: transparent;
@@ -588,8 +596,8 @@ body {
 .container-sar {
     display: flex;
     position: relative;
-    height: 900px;
-    margin-top: 5%;
+    height: 750px;
+    margin-top: 4%;
 }
 
 /* Column */
@@ -628,7 +636,7 @@ body {
 
 /* Heading */
 .column-sar .content h2 {
-    font-size: 60px;
+    font-size: 40px;
     font-weight: 700;
     color: #fff;
     margin: 0;
@@ -637,14 +645,16 @@ body {
 
 /* Paragraph */
 .column-sar .content p {
-    font-size: 32px;
+    font-size: 25px;
     color: #fff;
     margin: 0;
+    width: 70%;
 }
 
 /* Button */
 .column-sar .content a {
-    font-size: 70px;
+    height: 60px;
+    width: 60px;
     color: #fff;
     text-decoration: none;
     transition: background-color 0.3s ease;
@@ -657,10 +667,10 @@ body {
     padding-left: 15%;
     padding-right: 15%;
     width: 100%;
-    height: 300px;
+    height: 250px;
     background-color: #F5F5F5;
     position: relative;
-    margin-top: 15%;
+    margin-top: 12%;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -676,11 +686,12 @@ body {
 }
 
 .stock-container p {
-    font-size: 23px;
+    font-size: 20px;
 }
 
 .stock-container h1 {
     font-weight: 400;
+    font-size: 30px;
 }
 
 /*-------------stock-line-----------------*/
@@ -691,33 +702,34 @@ body {
 
 .key-features-block {
     position: relative;
-    margin-right: 15%;
-    margin-top: 14%;
+    margin-right: 10%;
+    margin-top: 12%;
 }
 
 .key-features-block .head {
-    margin-left: 10%;
+    margin-left: 15%;
     text-align: center;
 }
 
 .key-features-block h1 {
     color: #055295;
-    font-size: 50px;
-    width: 70%;
+    font-size: 30px;
+    width: 50%;
     font-weight: 700;
-    margin-left: 15%;
+    margin-left: 25%;
 }
 
 .key-features-block p {
-    font-size: 30px;
+    font-size: 25px;
     width: 90%;
     margin-left: 5%;
+    margin-top: 2%;
 }
 
 /* Flex Container */
 .flex-container {
-    margin-left: 15%;
-    margin-top: 5%;
+    margin-left: 20%;
+    margin-top: 3%;
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
@@ -734,7 +746,7 @@ body {
     justify-content: space-between;
     align-items: center;
     padding-bottom: 10px;
-    height: 600px;
+    height: 500px;
 }
 
 /* Image */
@@ -750,10 +762,9 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 27px;
+    font-size: 22px;
     font-weight: 700;
     margin-top: 10px;
-    margin-bottom: 5px;
     color: #055295;
 }
 
@@ -762,10 +773,10 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 20px;
-    margin-bottom: 10px;
+    font-size: 18px;
     width: 80%;
     text-align: center;
+    margin: 0;
 }
 
 /* Button */
@@ -774,11 +785,19 @@ body {
     align-items: center;
     justify-content: center;
     padding: 5px 10px;
-    width: 70px;
+    width: 60px;
     height: 110px;
     color: #fff;
+    border-radius: 50%;
     text-decoration: none;
+}
 
+.card a img{
+    object-fit: contain;
+}
+
+.card p img{
+    object-fit: contain;
 }
 
 
@@ -788,8 +807,8 @@ body {
 /*-----------------Years Container --------------------------*/
 .slider-container-years {
     width: 100%;
-    height: 900px;
-    margin-top: 15%;
+    height: 700px;
+    margin-top: 13%;
     overflow: hidden;
     position: relative;
 }
@@ -804,7 +823,7 @@ body {
 
 /* Slide */
 .slide {
-    width: 33.33%;
+    width: 33.34%;
     height: 100%;
     display: flex;
 }
@@ -819,7 +838,7 @@ body {
 
 /* Column */
 .column {
-    width: 48%;
+    width: 50%;
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -846,8 +865,8 @@ body {
 
 /* Heading */
 .column h2 {
-    margin-top: 10%;
-    font-size: 50px;
+    margin-top: 2%;
+    font-size: 32px;
     width: 65%;
     font-weight: bold;
     margin-bottom: 10px;
@@ -857,8 +876,8 @@ body {
 
 /* Paragraph */
 .column p {
-    font-size: 35px;
-    width: 70%;
+    font-size: 25px;
+    width: 50%;
     margin-left: 10%;
     color: #fff;
     margin-bottom: 20px;
@@ -871,12 +890,13 @@ body {
     align-items: center;
     margin-bottom: 10%;
     margin-left: 10%;
+    margin-top: 0;
 }
 
 .buttons button {
     margin: 0 5px;
     background: transparent;
-    font-size: 50px;
+    font-size: 30px;
     font-weight: 700;
     color: #fff;
     border: none;
@@ -886,7 +906,7 @@ body {
 
 .buttons span {
     color: #fff;
-    font-size: 50px;
+    font-size: 30px;
 }
 
 .buttons button:hover {
@@ -901,14 +921,14 @@ body {
 
 .image-and-join-us {
     width: 100%;
-    margin-top: 15%;
+    margin-top: 11%;
     display: flex;
     flex-direction: row;
-    height: 725px;
+    height: 625px;
 }
 
 .image-and-join-us .image-column {
-    width: 48%;
+    width: 50%;
     height: 100%;
 }
 
@@ -919,25 +939,25 @@ body {
 }
 
 .image-and-join-us .joinus-column {
-    margin-left: 4%;
-    width: 48%;
+    margin-left: 2%;
+    width: 50%;
     height: 100%;
     background-color: #333333;
     color: #fff;
 }
 
 .image-and-join-us .joinus-column h1 {
-    font-size: 50px;
+    font-size: 30px;
     font-weight: 700;
     width: 50%;
     margin-left: 25%;
     text-align: center;
-    margin-top: 30%;
+    margin-top: 25%;
 }
 
 .image-and-join-us .joinus-column p {
-    font-size: 25px;
-    margin-top: 10%;
+    font-size: 20px;
+    margin-top: 2%;
     margin-left: 25%;
     width: 50%;
     text-align: center;
